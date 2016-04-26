@@ -1,0 +1,7 @@
+---
+apt_upgrade: "safe"
+apt_autoremove: true
+base_packages:
+  - htop
+  - vim
+addn_packages: []

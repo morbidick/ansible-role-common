@@ -1,0 +1,6 @@
+---
+galaxy_info:
+  author: Lukas Mohrbacher
+  description: simpe Ansible role to manage basic packages and updates
+  license: MIT
+  dependencies: []
