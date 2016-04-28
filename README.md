@@ -1,4 +1,4 @@
-# Dnsmasq
+# Common / Apt
 
 A simpe Ansible role to manage basic packages and updates.
 
