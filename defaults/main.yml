@@ -1,5 +1,5 @@
 ---
-apt_upgrade: "safe"
+apt_upgrade: "no"
 apt_autoremove: true
 base_packages:
   - htop

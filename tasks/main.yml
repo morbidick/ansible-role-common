@@ -3,15 +3,8 @@
   apt:
     update_cache: yes
     upgrade: "{{ apt_upgrade }}"
-    #autoremove: yes
+    autoremove: yes
   when: ansible_pkg_mgr == 'apt'
-
-# can be removed as soon as ansible is upgraded to 2.1
-- name: Autoremove unused apt packages
-  command: apt-get -y autoremove
-  register: check_autoremove
-  when: ansible_pkg_mgr == 'apt' and apt_autoremove
-  changed_when: "'packages will be REMOVED' in check_autoremove.stdout"
 
 - name: Install base packages
   package:
